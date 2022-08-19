@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ 
+/* css for logo surrounding */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    /* padding: 2px 3px;
+    width: 100px; */
+    height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* navigation bar list items css */
+#navbar ul{
+    display: flex;
+    
+}
+/* navbar's background set */
+#navbar::before{
+    content: "";
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+/* list items css */
+#navbar ul li{
+    
+    /* background-color: aquamarine; */
+    /* margin: 6px; */
+    list-style: none; /* bullet points remove */
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: black;
+    border-radius: 20px;
+    display: block;
+    /* margin: 6px; */
+    padding:3px 22px ;
+    text-decoration: none;  /* to remove underline */
+}
+#navbar ul li a:hover{
+color: red;
+background-color:whitesmoke ;  
+
+}
+.btn{
+    margin: 17px;
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+     cursor: pointer;  /*cursor point krega hover krne pr */
+}
+.button .btn {
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    margin: 20px;
+    padding: 5px 6px;
+}
+.btn:hover{
+    background-color: brown;
+    color: aquamarine;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../Images/logo1.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: black;
+
+    font: size 1.5rem; ;
+    text-align: center;
+}
+#home p{
+    color: black;
+
+    font: size 1.5rem; ;
+    text-align: center;
+}
+/* Utility classes */
+.h-primary{
+font-size: 2.8rem;
+padding: 12px;
+
+}
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background-color: silver;
+    flex-direction: column;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    font-style: italic;
+  
+}
+
+/* Clients Section  */
+/* #client-section{
+height: 100%;
+} */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    position: relative;
+}
+.client-item {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    height: 150px;
+    width: 130px;
+    margin: 20px 20px; */
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../Images/img4.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/*Contact Section  */
+
+#contact{
+ position: relative;   
+}
+ #contact::before{
+   content: ""; 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.6;
+   background: url('../Images/img5.jpg') no-repeat center center/cover;
+
+} 
+
+footer{
+    /* position: absolute; */
+    color: white;
+background: black;
+    /* margin: 20px; */
+    padding: 9px 20px;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+font-size: 1.3rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.center{
+    text-align: center;
+}
+.button .btn{
+    background-color: black;
+}
